@@ -32,41 +32,23 @@ Abaixo uma lista do que adicionei ou ainda pretendo adicionar.
 Abaixo uma lista de comandos para clonar e configurar este projeto na sua 
 máquina local:
 
-- Instalar git (Windows, Linux e Mac) e depois:
+- Instalar git (Windows) e depois:
 
 ```
-git clone https://github.com/luizomf/django-simple-ecommerce.git
+git clone https://github.com/raulpastrello/roccy_platas.git
 ```
 
 - Para **Windows**:
 
 ```
-cd django-simple-ecommerce
-python -m venv venv
-venv\Scripts\activate.bat
-python -m pip install --upgrade pip setuptools wheel --user
-python -m pip install django django-debug-toolbar django-crispy-forms pillow
+cd roccy_platas
+python3 -m venv django_env
+source django_env/Scripts/activate
+python3 -m pip install --upgrade pip setuptools wheel --user
+python3 -m pip install django django-debug-toolbar django-crispy-forms pillow
 python manage.py migrate
-```
+python manage.py runserver
 
-- Para **Linux**:
-
-```
-cd django-simple-ecommerce
-python3.7 -m venv venv
-. venv/bin/activate
-pip install django django-debug-toolbar django-crispy-forms pillow
-python manage.py migrate
-```
-
-- Para **Mac**
-
-```
-cd django-simple-ecommerce
-python -m venv venv
-. venv/bin/activate
-pip install django django-debug-toolbar django-crispy-forms pillow
-python manage.py migrate
 ```
 
 Pronto!
