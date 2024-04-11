@@ -1,4 +1,4 @@
-# Projeto E-commerce 
+# Projeto loja de jóias Roccy Platas 
 Um projeto extremamente simples de e-commerce (ainda incompleto) feito com 
 Django 2.2.4 e Python 3.7.3.
 
