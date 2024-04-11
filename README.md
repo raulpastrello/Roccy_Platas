@@ -46,8 +46,8 @@ python3 -m venv django_env
 source django_env/Scripts/activate
 python3 -m pip install --upgrade pip setuptools wheel --user
 python3 -m pip install django django-debug-toolbar django-crispy-forms pillow
-python manage.py migrate
-python manage.py runserver
+python3 manage.py migrate
+python3 manage.py runserver
 
 ```
 
