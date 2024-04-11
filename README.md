@@ -1,6 +1,6 @@
 # Projeto loja de jóias Roccy Platas 
-Um projeto extremamente simples de e-commerce (ainda incompleto) feito com 
-Django 2.2.4 e Python 3.7.3.
+Um projeto extremamente simples e-commerce para uma loja de jóias (ainda incompleto) feito com 
+Django 2.2.4 e Python 3.11.
 
 ### Conteúdo educacional
 Criado para aula de Tópicos avançados em sistemas de informação. Turma 2024 do Curso de ADS Cruzeiro Do Sul na Vila Leopoldina.
