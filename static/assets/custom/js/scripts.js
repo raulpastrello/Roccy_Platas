@@ -1,9 +1,9 @@
 (function () {
-    select_variacao = document.getElementById('select-variacoes');
+    select_dono = document.getElementById('select-variacoes');
     variation_preco = document.getElementById('variation-preco');
     variation_preco_promocional = document.getElementById('variation-preco-promocional');
 
-    if (!select_variacao) {
+    if (!select_dono) {
         return;
     }
 
@@ -11,7 +11,7 @@
         return;
     }
 
-    select_variacao.addEventListener('change', function () {
+    select_dono.addEventListener('change', function () {
         preco = this.options[this.selectedIndex].getAttribute('data-preco');
         preco_promocional = this.options[this.selectedIndex].getAttribute('data-preco-promocional');
 

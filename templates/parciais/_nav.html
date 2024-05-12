@@ -1,7 +1,7 @@
 {% load omfilters %}
 
 <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
-    <a class="navbar-brand" href="{% url 'produto:lista' %}">Roccy Platas</a>
+    <a class="navbar-brand" href="{% url 'animal:lista' %}">Petshop</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -16,7 +16,6 @@
                     Conta
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{% url 'pedido:lista' %}">Meus pedidos</a>
                     <a class="dropdown-item" href="{% url 'perfil:criar' %}">Atualizar meus dados</a>
                     <a class="dropdown-item" href="{% url 'perfil:logout' %}">Sair</a>
                 </div>
@@ -32,7 +31,7 @@
 
             {% if request.session.carrinho %}
             <li class="nav-item">
-                <a class="nav-link nav-cart-link active" href="{% url 'produto:carrinho' %}">
+                <a class="nav-link nav-cart-link active" href="{% url 'animal:carrinho' %}">
                     <span class="nav-cart-text mr-1">
                         Carrinho
                     </span>
@@ -48,7 +47,7 @@
 
 
         </ul>
-        <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'produto:busca' %}">
+        <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'animal:busca' %}">
             <input name="termo" value="{{ request.GET.termo }}" class="form-control mr-sm-2" type="search"
                 placeholder="Busca" aria-label="Busca">
             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Busca</button>

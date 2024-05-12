@@ -32,7 +32,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django_rename_app',
     'animal',
     'perfil',
     'django.contrib.admin',
